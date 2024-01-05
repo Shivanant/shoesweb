@@ -1,4 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 *{
     margin: 0%; 
     padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    background: blueviolet;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top,purple,blueviolet);
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+section{    
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+   
+    
+}
+
+section nav .logo{
+    position: relative;
+    left: -10%;
+    margin: 5px 0px;
+    cursor: pointer;
+    color: blueviolet;
+    font-size: 35px;
+}
+section nav .logo span{
+    color: rgb(225, 20, 225);
+    text-decoration:underline;
+}
+section nav ul{
+    list-style: none;
+}
+section nav li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+
+}
+section nav li a:hover{
+    color: purple;
+}
+
+nav .icons i{
+    transition: 0.2s;
+    font-size: 18px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+nav .icons :hover{
+    color: purple;
+}
+section .main .main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section .main .main-content .main-text h1{
+    font-size: 90px;
+    line-height: 70px;
+    font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(to right,blueviolet,purple);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    top: 20px;
+    left: 5%;
+
+}
+section .main .main-content .main-text h1 span{
+    font-size: 70px;
+
+}
+
+section .main .main-content .main-text p{
+    position: relative;
+    left: 5%;
+    top:65px;
+    line-height: 21px;
+    width: 650px;
+    text-align: justify;
+}
+
+section .main .main-content .main-image img{
+    position: relative;
+    width: 650px;
+    top:65px;
+    left:20px;
+}
+section .main .social-icons{
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    font-size: 19px;
+}
+section .main .social-icons i{
+    margin: 8px 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main .social-icons i:hover{
+    color: purple;
+    
+}
+section .main .button{
+    position: absolute;
+    left: 6%;
+    background: linear-gradient(to left, purple,blueviolet);
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+
+}
+section .main .button a{
+    color: aliceblue;
+    text-decoration: none;
+}
+section .main .button i{
+    margin-left: 5px;
+    transition: 0.3s;
+}
+section .main .button:hover i{
+    transform: translateX(5px);
+}
+
+
+.products{
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0;
+
+}
+.products h1{
+    margin:25px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,purple,blueviolet);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.products .box .card .shoes-img img{
+    width: 150px;
+}
+.products .box{
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto;
+    padding: 25px 0;
+    grid-gap: 20px 30px;
+}
+
+.products .box .card{
+    padding: 10px 10px;
+    box-shadow: 0 0 8px purple;
+    border-radius: 5px;
+    text-align: center;
+    background: #f6f6f6;
+    height: 400px;
+}
+
+.products .box .card .smallcard{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
 }
