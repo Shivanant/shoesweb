@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nice</title>
+    <title>Nike</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="image/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,8 +19,9 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Products">Products</a></li>
-                <li><a href="#Servise">Servise</a></li>
                 <li><a href="#About">About</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Servise">Servise</a></li>
 
             </ul>
 
@@ -32,7 +33,7 @@
 
         </nav>
         
-        <div class="main" id="main">
+        <div class="main" id="Home">
             <div class="main-content">
                 <div class="main-text">
                     <h1>Nike<br><span>Collection</span></h1>
@@ -295,11 +296,274 @@
                     <button>Add to Cart</button>
                 </div>
 
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--About-->
+    <div class="about" id="About">
+        <h1>Web <span> About</span></h1>
+        <div class="about-content">
+            <div class="imagebox">
+                <div class="smallbox">
+                    <img src="image/red_shoes1.png" alt="red_shoes1" onclick="setimg(this)">
+                    <img src="image/red_shoes2.png" alt="red_shoes2" onclick="setimg(this)">
+                    <img src="image/red_shoes3.png" alt="red_shoes3" onclick="setimg(this)">
+                    <img src="image/red_shoes4.png" alt="red_shoes4" onclick="setimg(this)">
+
+                </div>
+                <div class="bigimage">
+                    <img src="image/red_shoes1.png" alt="red_shoes1" id="Aboutimg">
+                </div>
 
             </div>
+            <div class="textbox">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+                </p>
+
+            </div>
+            <script>
+                function setimg(image){
+                    var i=document.getElementById('Aboutimg')
+                    i.src=image.src    
+                }
+            </script>
+           
+        </div>
+        
+        <a href="#Products" class="shopnow"> Shop Now</a>
+        
+
+    </div>
+
+    <!--Review-->
+
+    <div class="review" id="Review">
+        <h1>Customer's <span>Review</span></h1>
+        <div class="reviewcontent">
+            <div class="reviewcard">
+                <div class="profile">
+                    <div class="profileimg">
+                        <img src="image/man_dp1.jpg" alt="man1">
+                    </div>
+                    <div class="nameandrev">
+                        <h2>Name 1</h2>
+                        <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                </div>
+            </div>
+            <div class="reviewcard">
+                <div class="profile">
+                    <div class="profileimg">
+                        <img src="image/man_dp1.jpg" alt="man1">
+                    </div>
+                    <div class="nameandrev">
+                        <h2>Name 1</h2>
+                        <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                </div>
+            </div>
+            <div class="reviewcard">
+                <div class="profile">
+                    <div class="profileimg">
+                        <img src="image/man_dp1.jpg" alt="man1">
+                    </div>
+                    <div class="nameandrev">
+                        <h2>Name 1</h2>
+                        <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                </div>
+            </div>
+            <div class="reviewcard">
+                <div class="profile">
+                    <div class="profileimg">
+                        <img src="image/man_dp1.jpg" alt="man1">
+                    </div>
+                    <div class="nameandrev">
+                        <h2>Name 1</h2>
+                        <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                </div>
+            </div>
+            <div class="reviewcard">
+                <div class="profile">
+                    <div class="profileimg">
+                        <img src="image/man_dp1.jpg" alt="man1">
+                    </div>
+                    <div class="nameandrev">
+                        <h2>Name 1</h2>
+                        <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                </div>
+            </div>
+            <div class="reviewcard">
+                <div class="profile">
+                    <div class="profileimg">
+                        <img src="image/man_dp1.jpg" alt="man1">
+                    </div>
+                    <div class="nameandrev">
+                        <h2>Name 1</h2>
+                        <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                </div>
+            </div>
+
         </div>
 
     </div>
+<!--Servise-->
+
+    <div class="servise" id="Servise">
+        <h1>Our<span>Service</span></h1>
+        <div class="content">
+            <div class="box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h2>Fast Delivery</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-rotate-right"></i>
+                <h2>10 Days Replacement</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-headset"></i>
+                <h2>Customer Support</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="shoeimage">
+            <img src="image/logshoes.png" alt="">
+        </div>
+        <div class="loginform">
+            <h1>Welcome To The Store!</h1>
+            <form action="#">
+                <p>Username</p>
+                <input type="text" placeholder="Username">
+                <p>Password</p>
+                <input type="password" placeholder="Password">
+                <div><a href="#">Forgot password ?</a></div>
+                <button>Login</button>
+
+            </form>
+            <div class="signup">
+                <p> - or - </p>
+                <div class="logo">
+                    <img src="image/facebook.png" alt="fb">
+                    <img src="image/google.png" alt="google">
+                    <img src="image/twitter.png" alt="X">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        
+            <div class="card">
+            
+                <h3>Contact</h3>
+                <p>123/Delhi/IN</p>
+                <p>+91 12 345 6789</p>
+                <p>contact@gmail.com</p>
+            </div>
+            <div class="card">
+                <h3>Our Store</h3>
+                <p>India</p>
+                <p>USA</p>
+                <p>Europe</p>
+            </div>
+            <div class="card">
+                <h3>Get Help</h3>
+                <p>FAQ</p>
+                <p>Return</p>
+                <p>Payment Options</p>
+            </div>
+            <div class="card">
+                <h3>Follow Us</h3>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> 
+
+                </div>
+            </div>
+        
+        
+
+    </footer>
+
+
     
 </body>
 </html>
